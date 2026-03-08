@@ -34,12 +34,13 @@ img {
 .navigation-container {
   display: flex;
   align-items: center; /* vertical alignment */
-  justify-content: space-between; /* space between logo and nav */
+  gap: 76px;
 }
 
 .navigation-list {
   display: flex; /* puts nav links in one row */
-  gap: 20px;
+  gap: 40px;
+  margin-left: auto;
 }
 
 .list-address {
@@ -50,6 +51,11 @@ img {
 .address-container {
   display: flex;
   margin-left: auto; /* pushes address to the right */
+  gap: 40px;
+}
+
+.list-address-li {
+  padding: 10px;
 }
 
 .web-studio {
@@ -93,11 +99,13 @@ img {
 .hero-section {
   background-color: #2e2f42;
   color: white;
+  padding: 188px 472px;
 }
 
 .hero-section .container {
   flex-direction: column;
   align-items: center;
+  gap: 48px;
 }
 
 .hero-header-1 {
@@ -127,8 +135,17 @@ img {
 }
 
 /* main: 'our-features', 'our team', 'our portfolio' sections */
+.our-features {
+  padding: 120px 156px;
+}
+
 .our-features-list {
   display: flex;
+  gap: 24px;
+}
+
+.our-features-li {
+  width: calc(100%-72px) / 4;
 }
 
 .our-features-h3 {
@@ -174,27 +191,45 @@ img {
 
 .our-team {
   background-color: #f4f4fd;
+  padding: 120px 156px;
 }
 
 .our-team .container {
   align-items: center;
   flex-direction: column;
+  gap: 72px;
 }
 
 .our-team-list {
   display: flex;
-  gap: 20px;
+  gap: 24px;
+  padding: 0;
+}
+
+.our-team-li {
+  width: calc(100%-72px) / 4;
+}
+
+.our-portfio {
+  padding: 120px 156px;
 }
 
 .our-portfio .container {
   align-items: center;
   flex-direction: column;
+  gap: 60px;
 }
 
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 24px;
+  padding: 0;
+  align-content: space-between;
+}
+
+.our-portfolio-list-li {
+  width: calc(100%-48px) / 3;
 }
 
 .our-team-li {
@@ -229,13 +264,16 @@ img {
 }
 
 /* footer */
-.footer {
+.footer-section {
   width: 100%;
   background-color: #2e2f42;
+  padding: 100px 1020px 100px 156px;
 }
 
-.footer .container {
+.footer-section .container {
+  align-items: center;
   flex-direction: column;
+  gap: 16px;
 }
 
 .footer-p {
