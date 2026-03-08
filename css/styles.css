@@ -5,11 +5,53 @@ body {
   background-color: white;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+a {
+  margin: 0;
+  padding-left: 0;
+}
+
 ul {
   list-style-type: none;
 }
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  display: flex;
+}
+
+img {
+  display: block;
+}
+
 /* header */
+.navigation-container {
+  display: flex;
+  align-items: center; /* vertical alignment */
+  justify-content: space-between; /* space between logo and nav */
+}
+
+.navigation-list {
+  display: flex; /* puts nav links in one row */
+  gap: 20px;
+}
+
+.list-address {
+  display: flex; /* puts nav links in one row */
+  gap: 20px;
+}
+
+.address-container {
+  display: flex;
+  margin-left: auto; /* pushes address to the right */
+}
+
 .web-studio {
   text-transform: uppercase;
   text-decoration: none;
@@ -53,11 +95,18 @@ ul {
   color: white;
 }
 
+.hero-section .container {
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-header-1 {
   font-size: 56px;
   line-height: 1.071428;
   letter-spacing: 0.02em;
   text-align: center;
+  width: 496px;
+  height: 120px;
 }
 
 .order-button {
@@ -68,6 +117,8 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
 }
 
 .order-button:hover,
@@ -76,12 +127,29 @@ ul {
 }
 
 /* main: 'our-features', 'our team', 'our portfolio' sections */
+.our-features-list {
+  display: flex;
+}
+
 .our-features-h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .our-features-p {
@@ -93,7 +161,6 @@ ul {
   text-align: left;
 }
 
-.our-features-h2,
 .our-team-h2,
 .our-portfio-h2 {
   text-align: center;
@@ -107,6 +174,27 @@ ul {
 
 .our-team {
   background-color: #f4f4fd;
+}
+
+.our-team .container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 20px;
+}
+
+.our-portfio .container {
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .our-team-li {
@@ -142,7 +230,12 @@ ul {
 
 /* footer */
 .footer {
+  width: 100%;
   background-color: #2e2f42;
+}
+
+.footer .container {
+  flex-direction: column;
 }
 
 .footer-p {
@@ -150,6 +243,7 @@ ul {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  width: 264px;
 }
 
 .footer .web-studio {
