@@ -95,8 +95,6 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .list-address-a {
@@ -107,8 +105,6 @@ img {
   line-height: 1.5;
   color: #434455;
   text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 /* main: 'hero' section */
@@ -315,6 +311,7 @@ img {
   letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
+  margin-right: 1020px;
 }
 
 .footer .web-studio {
