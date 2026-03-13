@@ -30,21 +30,18 @@ img {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 156px;
-  margin-right: 156px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* header */
 .header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #e7e9fc;
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 156px;
-  margin-right: 156px;
 }
 
 .navigation-container {
@@ -105,6 +102,8 @@ img {
   line-height: 1.5;
   color: #434455;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* main: 'hero' section */
@@ -297,11 +296,14 @@ img {
 
 /* footer */
 .footer {
-  display: flex;
-  justify-content: center;
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-p {
@@ -311,7 +313,6 @@ img {
   letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
-  margin-right: 1020px;
 }
 
 .footer .web-studio {
