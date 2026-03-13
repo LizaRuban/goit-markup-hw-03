@@ -77,7 +77,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.header .web-studio {
+.logo-header {
   color: #2e2f42;
 }
 
@@ -317,7 +317,7 @@ img {
   margin-top: 16px;
 }
 
-.footer .web-studio {
+.logo-footer {
   color: #f4f4fd;
 }
 
