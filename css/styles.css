@@ -92,6 +92,8 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .list-address-a {
@@ -121,7 +123,7 @@ img {
   line-height: 1.071428;
   letter-spacing: 0.02em;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
 }
 
 .order-button {
@@ -311,7 +313,7 @@ img {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
   margin-top: 16px;
 }
 
